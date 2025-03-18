@@ -1,0 +1,62 @@
+* {
+  color: hotpink;
+}
+li {
+  color: purple;
+  border: 2px dashed red;
+}
+.blue-color {
+  color: blue;
+}
+.yellow-color {
+  color: yellow;
+}
+#second-para {
+  color: chocolate;
+}
+section {
+  text-align: center;
+  border: 1px solid black;
+  
+}
+
+body {
+  background-color: beige;
+  font-family: "Big Shoulders", sans-serif;
+  font-optical-sizing: auto;
+  font: weight 500px;
+  font-style: normal;
+}
+.green-border {
+  border: 3px dashed blueviolet;
+}
+h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: rgb(138, 55, 55);
+  font-family: "Big Shoulders", sans-serif;
+  font-optical-sizing: auto;
+  font: weight 500px;
+  font-style: normal;
+}
+h2 {
+  color: red;
+}
+h3 {
+  color: green;
+}
+h4 {
+  color: brown;
+}
+p {
+  color: blue;
+  font-weight: bold;
+}
+/* curly braces {} */
+/* square brackets [] */
+/* parenthese <> */
+/* round brackets () */
+/* colon : */
+/* semicolon ; */
+/* syntax - rule of writing */
+/* to add comment CMD / */
