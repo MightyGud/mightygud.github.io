@@ -1,0 +1,34 @@
+body {
+  font-size: 1.2rem;
+  text-align: center;
+  margin: 0 auto;
+}
+h1 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-top: 40px;
+}
+
+p {
+  border: 1px solid red;
+  border-bottom: dashed 15px;
+  width: 400px;
+  height: 500px;
+  /* min-height: 100px; */
+  margin: 0 auto;
+  /* horizontal centering */
+  /* padding-left: 20px; */
+  /* padding: 20px 30px 20px 30px */
+  padding: 15px;
+  margin-bottom: 20px;
+}
+/* use rem for any text unit */
+/* only use min for paragraph */
+/* Padding order: T R B L */
+/* Margin order: T R B L */
+.vcenter {
+  line-height: 470px;
+}
+span {
+  color: blue;
+}
