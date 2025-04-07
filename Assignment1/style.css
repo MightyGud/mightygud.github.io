@@ -1,0 +1,176 @@
+body {
+    background-color:blanchedalmond
+}
+h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: rgb(138, 55, 55);
+    font-family: "Big Shoulders", sans-serif;
+    font-optical-sizing: auto;
+    font: weight 500px;
+    font-style: oblique;}
+.first-question {
+    color:rgb(10, 175, 120);
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: normal;
+    
+}
+.second-question{
+    color:rgb(10, 175, 120);
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: normal;
+}
+.third-question{
+    color:rgb(10, 175, 120);
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: normal;
+}
+.fourth-question{
+    color:rgb(10, 175, 120);
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: normal;
+}
+.fifth-question{
+    color:rgb(10, 175, 120);
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: normal;
+}
+.sixth-question{
+    color:rgb(10, 175, 120);
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: normal;
+}
+.seventh-question{
+    color:rgb(10, 175, 120);
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: normal;
+}
+.eight-question{ 
+    color:rgb(10, 175, 120);
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: normal;
+    
+}
+.ninth-question{
+    color:rgb(10, 175, 120);
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: normal;
+}
+.tenth-question{
+    color:rgb(10, 175, 120);
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: normal;
+}
+.eleventh-question{
+    color:rgb(10, 175, 120);
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: normal;
+}
+.twelveth-question{
+    color:rgb(10, 175, 120);
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: normal;
+}
+.thirdteen-question{
+    color:rgb(10, 175, 120);
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: normal;
+}
+.first-slot-of-the-answer{
+    border: 2px dashed green;
+    font-style: italic;
+    color: rgb(45, 122, 45);
+    width: 400px;
+    height: 250px;
+    padding: 15px;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 0 auto;
+}
+.second-slot-of-the-answer{ 
+    border: 2px dashed rgb(190, 93, 55);
+    font-style: italic;
+    color: rgb(190, 93, 55);
+    width: 400px;
+    height: 200px;
+    padding: 15px;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 0 auto;
+}
+.third-slot-of-the-answer{
+    border: 2px dashed rgb(77, 27, 194);
+    font-style: italic;
+    color: rgb(19, 58, 233);
+    width: 400px;
+    height: 250px;
+    padding: 15px;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 0 auto;
+    
+}
+.eight-slot-answer{
+    border: 3px solid rgb(143, 43, 43);
+    width: 400px;
+  height: 250px;
+  padding: 15px;
+  margin-bottom: 20px;
+  color:brown;
+  font-size: 1.2rem;
+  text-align: center;
+  margin: 0 auto;
+}
+.first-answer{font-size: 1.2rem;
+    text-align: center;
+    margin: 0 auto;
+}
+.first-part-of-the-answer{
+    color: rgb(62, 168, 80);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.2rem;
+
+}
+.second-part-of-the-answer{color: rgb(207, 77, 44);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.2rem;
+}
+.third-part-of-the-answer
+{color: rgba(54, 52, 216, 0.863);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.2rem;
+}
+.conclution-of-the-second-answer
+{color: rgba(0, 0, 0, 0.863);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.2rem;
+}
