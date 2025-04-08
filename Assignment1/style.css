@@ -1,9 +1,14 @@
-body {
-  background-color: blanchedalmond;
-}
 /* My aim for the background color is aiming for neat, clean, and easy to read.
 blanchedalmond is fit the color of the paper. And it also easy for people to read.
 And it fit for the style Despite the font that i chose and the color.
+*/
+
+body {
+  background-color: blanchedalmond;
+}
+/* H1 titles will be the biggest among all the titles
+is easy to catch up the eyes of the reader to understand what is the goal
+of this essays.
 */
 h1 {
   font-size: 3rem;
@@ -65,8 +70,10 @@ and the experiences i have while using the slide */
   text-align: center;
   margin: 0 auto;
 }
+
 /* These are the tiles for each part of the sites, fitting them in somewhere near
-the same color of the box is quite simple to be more exact. */
+the same color of the box is quite simple to, each color represent each part
+of the site. */
 .first-part-of-the-answer {
   color: rgb(62, 168, 80);
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
@@ -91,6 +98,14 @@ the same color of the box is quite simple to be more exact. */
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-size: 1.2rem;
 }
+
+
+/* My first initial ideas is to put all the answer in class differently
+like class = "first-answer", class = "second-answwer" i want to style them
+differently. But when i look back, the process is messy and it took a lot of times. 
+Hence, losing the track of being simplefied and easy to communicate disorted.
+I put everything in id = answer. it easy to optimize my answer for each para.
+I apply the same progress for all the questions.*/
 #Answer {
   font-size: 1.2rem;
   text-align: center;
@@ -103,6 +118,8 @@ the same color of the box is quite simple to be more exact. */
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-style: normal;
 }
+
+/* the quicklink is for people to access the reference of the sites. */
 .reference-title{
   color: rgb(247, 18, 18);
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
