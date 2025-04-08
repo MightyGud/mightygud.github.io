@@ -6,6 +6,8 @@ And it fit for the style Despite the font that i chose and the color.
 body {
   background-color: blanchedalmond;
 }
+
+
 /* H1 titles will be the biggest among all the titles
 is easy to catch up the eyes of the reader to understand what is the goal
 of this essays.
@@ -110,6 +112,7 @@ I apply the same progress for all the questions.*/
   font-size: 1.2rem;
   text-align: center;
   margin: 0 auto;
+  color: rgb(0, 0, 0);
 }
 #question {
   color: rgb(10, 175, 120);
@@ -128,3 +131,8 @@ I apply the same progress for all the questions.*/
   margin: 0 auto;
 
 }
+
+#answer-eight {font-size: 1.2rem;
+  text-align: center;
+  margin: 0 auto;
+  color: rgb(0, 0, 0);}
