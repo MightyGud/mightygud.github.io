@@ -7,7 +7,6 @@ body {
   background-color: blanchedalmond;
 }
 
-
 /* H1 titles will be the biggest among all the titles
 is easy to catch up the eyes of the reader to understand what is the goal
 of this essays.
@@ -101,7 +100,6 @@ of the site. */
   font-size: 1.2rem;
 }
 
-
 /* My first initial ideas is to put all the answer in class differently
 like class = "first-answer", class = "second-answwer" i want to style them
 differently. But when i look back, the process is messy and it took a lot of times. 
@@ -123,16 +121,28 @@ I apply the same progress for all the questions.*/
 }
 
 /* the quicklink is for people to access the reference of the sites. */
-.reference-title{
+.reference-title {
   color: rgb(247, 18, 18);
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  font-size: 1.2rem;text-align: center;
-  margin: 0 auto;
-
-}
-
-#answer-eight {font-size: 1.2rem;
+  font-size: 1.2rem;
   text-align: center;
   margin: 0 auto;
-  color: rgb(0, 0, 0);}
+}
+
+#answer-eight {
+  font-size: 1.2rem;
+  text-align: center;
+  margin: 0 auto;
+  color: rgb(0, 0, 0);
+}
+
+.link-reference {
+  text-align: center;
+  margin: 0 auto;
+  color: rgb(0, 0, 0);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 1.2rem;
+  text-align: center;
+  margin: 0 auto;
+}
