@@ -1,0 +1,25 @@
+video {
+  display: block;
+  margin-bottom: 20px;
+}
+
+video {
+
+  width: 240;
+  height: 240px;
+}
+
+button {
+  padding: 20px;
+  font-size: 1.1rem;
+  border-radius: 20;
+  margin-right: 10px;
+  cursor: pointer;
+  background-color:  var(--bg-color);
+  
+  
+}
+
+button:hover {
+  scale:0.9;
+}
