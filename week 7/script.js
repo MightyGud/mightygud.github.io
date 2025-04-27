@@ -21,9 +21,21 @@ console.log(pauseButton);
 
 pauseButton.addEventListener("click", pauseAudio);
 
-function pauseAudio(){
-    airportAudio.pause();
+function pauseAudio() {
+  airportAudio.pause();
 }
 
 //-------
+const popSound = document.querySelector("#pop-audio");
+console.log(popSound);
 
+const popButton = document.querySelector("#pop-button");
+console.log(popButton);
+
+popButton.addEventListener("click", popAudio);
+
+function popAudio() {
+  myNewHeading = "Popping sound";
+  popSound.play();
+  topHeading.textContent = myNewHeading;
+}
