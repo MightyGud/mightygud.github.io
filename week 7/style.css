@@ -4,7 +4,6 @@ video {
 }
 
 video {
-
   width: 240;
   height: 240px;
 }
@@ -15,11 +14,9 @@ button {
   border-radius: 20;
   margin-right: 10px;
   cursor: pointer;
-  background-color:  var(--bg-color);
-  
-  
+  background-color: var(--bg-color);
 }
 
 button:hover {
-  scale:0.9;
+  scale: 0.9;
 }
