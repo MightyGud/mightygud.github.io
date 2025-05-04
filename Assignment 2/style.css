@@ -1,0 +1,10 @@
+body{
+    background-color: lightblue;
+}
+
+#erokia_audio {
+    display:block;
+    width: 240px;
+    height: 240px;
+    
+}
