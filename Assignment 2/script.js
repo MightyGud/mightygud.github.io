@@ -3,7 +3,6 @@ console.log(topHeading);
 
 let myNewHeading = "Music is playing";
 
-<<<<<<< HEAD
 const erokiaSound = document.querySelector("#erokia_audio");
 console.log(erokiaSound);
 
@@ -15,7 +14,7 @@ playButton.addEventListener("click", playAudio);
 
 function playAudio() {
   erokiaSound.play();
-=======
+//=======
 const erokiaSound = document.querySelector("#erokia_audio")
 console.log(erokiaSound)
 
