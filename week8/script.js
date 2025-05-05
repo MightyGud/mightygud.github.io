@@ -158,4 +158,3 @@ console.log(stardustButton);
 stardustButton.addEventListener("click", function chooseStartdust() {
   chooseVideo(2);
 });
-
