@@ -53,7 +53,19 @@ function toggleAudio() {
       "https://img.icons8.com/ios-glyphs/30/high-volume--v2.png";
   } else {
     erokiaSound.muted = true;
-    muteUnmuteButton.src =
+    muteUnmuteImg.src =
       "https://img.icons8.com/ios-glyphs/30/no-audio--v1.png";
   }
 }
+// progress bar
+myVideo.addEventListener("timeupdate", updateProgressbar);
+
+const progressBar = document.querySelector("#progress-bar");
+console.log(progressBar);
+
+function updateProgressbar() {
+  // find in percentage the amount of video played
+  let progress = (myVideo.currentTime / myVideo.duration) * 100;
+  console.log(progress);
+  // adjust the width of the progress bar accordingly
+  progressBar.style.width = progress + "%";
