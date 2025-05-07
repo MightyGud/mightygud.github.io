@@ -35,20 +35,50 @@ body {
   gap: 150px;
   border-radius: 20px;
 }
-#progress {
- -webkit-appearance: none;
+#progress{
+  -webkit-appearance: none;
   width: 100%;
   height: 6px;
-  background-color: rgba(42, 179, 179, 0.582);
+  background: blue;
   border-radius: 4px;
   cursor: pointer;
+  margin: 40px 0;
 }
+
 #progress::-webkit-slider-thumb{
   -webkit-appearance: none;
-  background: rgba(35, 35, 194, 0.993);
-  width: 20px;
-  height: 20px;
+  background: #02479c;
+  width:25px;
+  height: 25px;
   border-radius: 50%;
-  border: 5px solid white;
-  box-shadow: 0 5px 5px ;
+  border: 8px solid white;
+  box-shadow: 0 5px 5px rgba(255, 26, 26, 0.22);
+}
+
+#current-time{
+ font-size: 1.5rem;
+ padding: 10px; ;
+}
+
+#duration{
+  font-size: 1.5rem;
+  padding: 10px;
+}
+
+.slider-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#Reference {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+}
+.Credit {
+  display: flex;
+  gap: 10px;
+  margin: 10px;
 }
