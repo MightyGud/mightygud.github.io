@@ -9,15 +9,21 @@
   </head>
   <body>
     <h1 id="top-heading">MEDITATING WHILE STUDYING</h1>
+    <H2> Click buttons to play music</H2>
     <main>
+      <div class="slider-container">
+        <div class="current-time">0:00</div>
+        <input type="range" min="1" max="100" value="0" class="seek-slider" onchange="seekto()">
+        <div class="total-duration">0:00</div>
+      </div>
       <div>
         <audio
           src="erokia_ambient-wave-56-msfxp7-78.mp3"
-          controls
           id="erokia_audio"
+          preload="metadata"
         ></audio>
       </div>
-      <div class="control-audio">
+      <div class="control-audio" id="control-audio-div">
         <button id="play-button" class="control-audio">
           <img src="icons8-play-30.png" alt="play-button" />
         </button>

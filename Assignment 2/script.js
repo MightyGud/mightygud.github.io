@@ -57,15 +57,47 @@ function toggleAudio() {
       "https://img.icons8.com/ios-glyphs/30/no-audio--v1.png";
   }
 }
-// progress bar
-myVideo.addEventListener("timeupdate", updateProgressbar);
 
-const progressBar = document.querySelector("#progress-bar");
-console.log(progressBar);
+//progressBar
 
-function updateProgressbar() {
-  // find in percentage the amount of video played
-  let progress = (myVideo.currentTime / myVideo.duration) * 100;
-  console.log(progress);
-  // adjust the width of the progress bar accordingly
-  progressBar.style.width = progress + "%";
+// erokiaSound.addEventListener("timeupdate", updateProgressbar);
+
+// const progressBar = document.querySelector("#progress-bar");
+// console.log(progressBar);
+
+// function updateProgressbar() {
+  
+//   let progress = (erokiaSound.currentTime / erokiaSound.duration) * 100;
+//   console.log(progress);
+  
+//   progressBar.style.width = progress + "%";
+// }
+
+// timeDisplay
+
+const currentTime = document.querySelector("#current-time");
+console.log(currentTime);
+
+const totalDuration = document.querySelector("#total-duration");
+console.log(totalDuration);
+
+const seekSlider = document.querySelector("#seek-slider");
+console.log(seekSlider);
+
+const playerProgress = document.querySelector("#player-progress");
+console.log(playerProgress)
+
+function formaTime(sec) {
+  const m = Math.floor(sec / 60);
+  const s = Math.floor(sec % 60).toString().padStart(2, '0');
+  return `${m}:${s}`;
+}
+
+erokiaSound.addEventListener('loadedmetadata', () => {
+  seekSlider.max = erokiaSound.totalDuration;
+  totalDuration.textContent = formationTime(erokiaSound.totalDuration);
+});
+
+erokiaSound.addEventListener('timeupdate', () => {
+  seekSlider
+})
