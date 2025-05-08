@@ -1,8 +1,12 @@
+
+/* i used the font-face tag, because i want to add the pixel font styles, but i don't want to add them one by one
+so i came to add myself a font that i can use for the whole style.css
+that why i used @font-face, this can let you add your favourite font in the code */
 @font-face {
   font-family: "MyPixelFont";
   src: url("../Assignment 2/m5x7.ttf") format("truetype");
 }
-
+/* AFter i added the new font, i now can use the pixel font that i got from managore.itch.io*/
 body {
   font-family: "MyPixelFont", monospace;
   background-color: rgba(58, 129, 196, 0.575);
@@ -35,6 +39,8 @@ body {
   gap: 150px;
   border-radius: 20px;
 }
+/* After doing some research, i realise that -webkit-appeearance is a property used to change or reset the styling default of HTML
+this element is can be use by WebKit engine (used for browers like Chrome and Safari*/
 #progress {
   -webkit-appearance: none;
   width: 100%;
@@ -44,7 +50,8 @@ body {
   cursor: pointer;
   margin: 40px 0;
 }
-
+/* When the progress bar is done, i want to add one feature for the design of the bar is the "thumb" (the draggable circle) of the input slider, 
+this can be the core for dragging some part of the music.  */
 #progress::-webkit-slider-thumb {
   -webkit-appearance: none;
   background: #02479c;
