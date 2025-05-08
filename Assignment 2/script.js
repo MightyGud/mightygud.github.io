@@ -53,8 +53,7 @@ function toggleAudio() {
       "https://img.icons8.com/ios-glyphs/30/high-volume--v2.png";
   } else {
     erokiaSound.muted = true;
-    muteUnmuteImg.src =
-      "https://img.icons8.com/ios-glyphs/30/no-audio--v1.png";
+    muteUnmuteImg.src = "https://img.icons8.com/ios-glyphs/30/no-audio--v1.png";
   }
 }
 
@@ -66,10 +65,10 @@ function toggleAudio() {
 // console.log(progressBar);
 
 // function updateProgressbar() {
-  
+
 //   let progress = (erokiaSound.currentTime / erokiaSound.duration) * 100;
 //   console.log(progress);
-  
+
 //   progressBar.style.width = progress + "%";
 // }
 
@@ -85,19 +84,21 @@ const seekSlider = document.querySelector("#seek-slider");
 console.log(seekSlider);
 
 const playerProgress = document.querySelector("#player-progress");
-console.log(playerProgress)
+console.log(playerProgress);
 
 function formaTime(sec) {
   const m = Math.floor(sec / 60);
-  const s = Math.floor(sec % 60).toString().padStart(2, '0');
+  const s = Math.floor(sec % 60)
+    .toString()
+    .padStart(2, "0");
   return `${m}:${s}`;
 }
 
-erokiaSound.addEventListener('loadedmetadata', () => {
+erokiaSound.addEventListener("loadedmetadata", () => {
   seekSlider.max = erokiaSound.totalDuration;
   totalDuration.textContent = formationTime(erokiaSound.totalDuration);
 });
 
-erokiaSound.addEventListener('timeupdate', () => {
-  seekSlider
-})
+erokiaSound.addEventListener("timeupdate", () => {
+  seekSlider;
+});
