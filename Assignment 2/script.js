@@ -58,7 +58,8 @@ function toggleAudio() {
   }
 }
 
-//progressBar
+//progressBar This also can be used to become the process of the bar, however is very narrow, and it interative is not that really unique, so i changed the style design of the bar, i took my reference to a bar just like Spotify
+
 
 // erokiaSound.addEventListener("timeupdate", updateProgressbar);
 
@@ -73,31 +74,62 @@ function toggleAudio() {
 //   progressBar.style.width = progress + "%";
 // }
 
-// timeDisplay
+// timeDisplay ( This is the best work most frustration  and the most interesting work i ever done, i am excited to explain how i founded the solution for it)
 
 const currentTime = document.querySelector("#current-time");
 console.log(currentTime);
 
-const totalDuration = document.querySelector("#total-duration");
-console.log(totalDuration);
+const Duration = document.querySelector("#duration");
+console.log(Duration);
 
-const seekSlider = document.querySelector("#seek-slider");
-console.log(seekSlider);
+const progress = document.querySelector("#progress");
+console.log(progress);
 
-const playerProgress = document.querySelector("#player-progress");
-console.log(playerProgress)
-
-function formaTime(sec) {
+function formatTime(sec) {
   const m = Math.floor(sec / 60);
   const s = Math.floor(sec % 60).toString().padStart(2, '0');
   return `${m}:${s}`;
 }
 
+//while the audio is loaded, i have set the bar's max and duration lable i realise....
 erokiaSound.addEventListener('loadedmetadata', () => {
-  seekSlider.max = erokiaSound.totalDuration;
-  totalDuration.textContent = formationTime(erokiaSound.totalDuration);
+ progress.max = erokiaSound.Duration;
+Duration.textContent = formatTime(erokiaSound.Duration);
 });
 
-erokiaSound.addEventListener('timeupdate', () => {
-  seekSlider
-})
+erokiaSound.addEventListener("timeupdate", () => {
+  progress.value = erokiaSound.currentTime; // Update progress bar value
+  currentTime.textContent = formatTime(erokiaSound.currentTime); // Update current time text
+});
+
+
+// progress.addEventListener('input', () => {
+//  erokiaSound.currentTime = parseFloat(progress.vaule);
+//  });
+
+
+progress.addEventListener("input", () => {
+  const newTime = parseFloat(progress.value);
+  if (!isNaN(newTime) && isFinite(newTime) && newTime >= 0 && newTime <= erokiaSound.duration) {
+    erokiaSound.currentTime = newTime;
+  } else {
+    console.error("Invalid time value: ", progress.value);
+  }
+});
+
+erokiaSound.addEventListener("loadedmetadata", () => {
+  console.log("Audio duration:", erokiaSound.duration);
+  if (!isNaN(erokiaSound.duration) && isFinite(erokiaSound.duration)) {
+    progress.max = erokiaSound.duration;
+    duration.textContent = formatTime(erokiaSound.duration);
+  } else {
+    console.error("Invalid duration detected!");
+  }
+});
+
+erokiaSound.addEventListener("ended", () =>{
+  console.log("Audio ended, looping...");
+  erikoiaSound.currentTime = 0;
+  progress.vaule = 0;
+  erokiaSound.play()
+});
