@@ -1,3 +1,4 @@
+
 const topHeading = document.querySelector("#top-heading");
 console.log(topHeading);
 
@@ -75,10 +76,7 @@ function toggleAudio() {
 
 
 //--------
-// timeDisplay ( This is the most frustration and yet the most interesting work i ever done, i am excited to explain how i founded the solution for it).
-// Alot of these are used in "addEventListener" is because is depend on what happening first. Because of what is happening in the web-pages i decieded to use "addEventListener" to respond to those event.
-// taking my reference from Spotify, i want to created the music audio bar that can relate to the design, i seperated each part differently.
-// 1 part is the slider (#progress), the time currently running (#current-time), the maximum of the audio (#duration).
+
 
 const currentTime = document.querySelector("#current-time");
 console.log(currentTime);
@@ -178,4 +176,3 @@ erokiaSound.addEventListener("ended", () =>{
   progress.vaule = 0;
   erokiaSound.play()
 });
-

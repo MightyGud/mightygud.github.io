@@ -4,7 +4,7 @@ so i came to add myself a font that i can use for the whole style.css
 that why i used @font-face, this can let you add your favourite font in the code */
 @font-face {
   font-family: "MyPixelFont";
-  src: url("../Assignment 2/m5x7.ttf") format("truetype");
+  src: url("../Assignment2/m5x7.ttf") format("truetype");
 }
 /* AFter i added the new font, i now can use the pixel font that i got from managore.itch.io*/
 body {
