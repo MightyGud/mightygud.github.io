@@ -53,8 +53,7 @@ function toggleAudio() {
       "https://img.icons8.com/ios-glyphs/30/high-volume--v2.png";
   } else {
     erokiaSound.muted = true;
-    muteUnmuteImg.src =
-      "https://img.icons8.com/ios-glyphs/30/no-audio--v1.png";
+    muteUnmuteImg.src = "https://img.icons8.com/ios-glyphs/30/no-audio--v1.png";
   }
 }
 
@@ -67,14 +66,14 @@ function toggleAudio() {
 // console.log(progressBar);
 
 // function updateProgressbar() {
-  
+
 //   let progress = (erokiaSound.currentTime / erokiaSound.duration) * 100;
 //   console.log(progress);
-  
+
 //   progressBar.style.width = progress + "%";
 // }
 
-// timeDisplay ( This is the best work most frustration  and the most interesting work i ever done, i am excited to explain how i founded the solution for it)
+// timeDisplay ( This i the best work most frustration  and the most interesting work i ever done, i am excited to explain how i founded the solution for it)
 
 const currentTime = document.querySelector("#current-time");
 console.log(currentTime);
@@ -85,12 +84,22 @@ console.log(Duration);
 const progress = document.querySelector("#progress");
 console.log(progress);
 
+<<<<<<< HEAD
 function formatTime(sec) {
+=======
+const playerProgress = document.querySelector("#player-progress");
+console.log(playerProgress);
+
+function formaTime(sec) {
+>>>>>>> 86a4abb423ecc1f99544adf61f3a8aa27f3e43a2
   const m = Math.floor(sec / 60);
-  const s = Math.floor(sec % 60).toString().padStart(2, '0');
+  const s = Math.floor(sec % 60)
+    .toString()
+    .padStart(2, "0");
   return `${m}:${s}`;
 }
 
+<<<<<<< HEAD
 //while the audio is loaded, i have set the bar's max and duration lable i realise....
 erokiaSound.addEventListener('loadedmetadata', () => {
  progress.max = erokiaSound.Duration;
@@ -133,3 +142,13 @@ erokiaSound.addEventListener("ended", () =>{
   progress.vaule = 0;
   erokiaSound.play()
 });
+=======
+erokiaSound.addEventListener("loadedmetadata", () => {
+  seekSlider.max = erokiaSound.totalDuration;
+  totalDuration.textContent = formationTime(erokiaSound.totalDuration);
+});
+
+erokiaSound.addEventListener("timeupdate", () => {
+  seekSlider;
+});
+>>>>>>> 86a4abb423ecc1f99544adf61f3a8aa27f3e43a2
