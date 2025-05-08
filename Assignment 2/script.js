@@ -84,14 +84,7 @@ console.log(Duration);
 const progress = document.querySelector("#progress");
 console.log(progress);
 
-<<<<<<< HEAD
 function formatTime(sec) {
-=======
-const playerProgress = document.querySelector("#player-progress");
-console.log(playerProgress);
-
-function formaTime(sec) {
->>>>>>> 86a4abb423ecc1f99544adf61f3a8aa27f3e43a2
   const m = Math.floor(sec / 60);
   const s = Math.floor(sec % 60)
     .toString()
@@ -99,7 +92,6 @@ function formaTime(sec) {
   return `${m}:${s}`;
 }
 
-<<<<<<< HEAD
 //while the audio is loaded, i have set the bar's max and duration lable i realise....
 erokiaSound.addEventListener('loadedmetadata', () => {
  progress.max = erokiaSound.Duration;
@@ -142,13 +134,4 @@ erokiaSound.addEventListener("ended", () =>{
   progress.vaule = 0;
   erokiaSound.play()
 });
-=======
-erokiaSound.addEventListener("loadedmetadata", () => {
-  seekSlider.max = erokiaSound.totalDuration;
-  totalDuration.textContent = formationTime(erokiaSound.totalDuration);
-});
 
-erokiaSound.addEventListener("timeupdate", () => {
-  seekSlider;
-});
->>>>>>> 86a4abb423ecc1f99544adf61f3a8aa27f3e43a2
