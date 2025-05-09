@@ -1,4 +1,3 @@
-
 const topHeading = document.querySelector("#top-heading");
 console.log(topHeading);
 
@@ -60,7 +59,6 @@ function toggleAudio() {
 //----
 //progressBar : This also can be used to become the progress of the bar, however it is very narrow, and the interative is not that really unique, so i changed the style design of the bar, i took my reference to a bar just like Spotify
 
-
 // erokiaSound.addEventListener("timeupdate", updateProgressbar);
 
 // const progressBar = document.querySelector("#progress-bar");
@@ -74,9 +72,7 @@ function toggleAudio() {
 //   progressBar.style.width = progress + "%";
 // }
 
-
 //--------
-
 
 const currentTime = document.querySelector("#current-time");
 console.log(currentTime);
@@ -109,9 +105,9 @@ function formatTime(sec) {
 // after done that i use progress max to equal the duration of the sounds
 // AFter laoded i use the formatTime to display the time of the audio which has written above.
 
-erokiaSound.addEventListener('loadedmetadata', () => {
- progress.max = erokiaSound.Duration;
-Duration.textContent = formatTime(erokiaSound.Duration);
+erokiaSound.addEventListener("loadedmetadata", () => {
+  progress.max = erokiaSound.Duration;
+  Duration.textContent = formatTime(erokiaSound.Duration);
 });
 
 // After set the bar i need to create another code that when this is running, it need to update another bar.
@@ -145,7 +141,12 @@ erokiaSound.addEventListener("timeupdate", () => {
 
 progress.addEventListener("input", () => {
   const newTime = parseFloat(progress.value);
-  if (!isNaN(newTime) && isFinite(newTime) && newTime >= 0 && newTime <= erokiaSound.duration) {
+  if (
+    !isNaN(newTime) &&
+    isFinite(newTime) &&
+    newTime >= 0 &&
+    newTime <= erokiaSound.duration
+  ) {
     erokiaSound.currentTime = newTime;
   } else {
     console.error("Invalid time value: ", progress.value);
@@ -170,9 +171,9 @@ erokiaSound.addEventListener("loadedmetadata", () => {
 });
 
 //And Finally i coded another Event if the audio end it will looped back to the beggining of the song.
-erokiaSound.addEventListener("ended", () =>{
+erokiaSound.addEventListener("ended", () => {
   console.log("Audio ended, looping...");
   erikoiaSound.currentTime = 0;
   progress.vaule = 0;
-  erokiaSound.play()
+  erokiaSound.play();
 });
