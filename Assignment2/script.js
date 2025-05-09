@@ -57,6 +57,7 @@ function toggleAudio() {
   }
 }
 //----
+
 //progressBar : This also can be used to become the progress of the bar, however it is very narrow, and the interative is not that really unique, so i changed the style design of the bar, i took my reference to a bar just like Spotify
 
 // erokiaSound.addEventListener("timeupdate", updateProgressbar);
@@ -73,7 +74,11 @@ function toggleAudio() {
 // }
 
 //--------
-
+//TimeDisplay - i took the reference of the Spotify music slide bar.
+// This is one of the most frustration yet interesting secition that i ever done. I spent for more then 3 days to understand how this code work
+// Most of the code down here are used "addEventlistner". My reason for this is because this because is made the code to react to real-time events
+// such as loading, pausing, and interaction. can make the code dynamic.
+// To do this i splited into 3 section. The Current time, the Duration and the Progress
 const currentTime = document.querySelector("#current-time");
 console.log(currentTime);
 
