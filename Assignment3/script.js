@@ -42,10 +42,13 @@ function handleVideo(file) {
   }
 
   const videoURL = URL.createObjectURL(file);
-  video.src = videoURL;
-  video.load();
-  video.play();
-  preview.style.display = "block";
+  let newVideo = ` <video id="videoPlayer" src="${videoURL}" controls></video>`;
+  console.log(newVideo);
+  preview.innerHTML += newVideo;
+  // video.src = videoURL;
+  // video.load();
+  // video.play();
+  // preview.style.display = "block";
 }
 
 function handleVideos(fileList) {
@@ -60,7 +63,7 @@ function handleVideos(fileList) {
     const videoEl = document.createElement("video");
     videoEl.src = videoURL;
     videoEl.controls = true;
-
+    console.log(videoEl);
     previewContainer.appendChild(videoEl);
   });
 }

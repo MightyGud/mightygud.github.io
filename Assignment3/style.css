@@ -183,6 +183,8 @@ section {
 .video-preview {
   margin-top: 1.5rem;
   display: none;
+  display:flex;
+  gap: 20px;
 }
 
 video {
