@@ -84,7 +84,7 @@ this can be the core for dragging some part of the music.  */
   font-size: 1.5rem;
 }
 .Credit {
-  display: flex;
+  display: center;
   gap: 10px;
   margin: 10px;
 }

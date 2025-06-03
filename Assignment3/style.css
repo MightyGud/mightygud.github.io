@@ -29,7 +29,24 @@ body {
 }
 /* ------------------------------ */
 
+/* credit */
+
+.Credit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  color: white;
+}
+
 /* Navigation bar */
+/* the navbar itself is a container of the navigation bar, 
+navlink is the arranges of <ul>, i used this to customize the <ul>
+witht he nav ul a it access all the links insiude the <ul> make it easy to customize
+all at the same time this created 3 things:
++ Has a logo/brand on the lfet
++ Has menu links on the right
++ Looks clean, centered, and easy to read*/
 .navbar {
   position: fixed;
   top: 0;
@@ -68,6 +85,12 @@ section {
 /* --------------------------- */
 
 /* All Design software */
+
+/* This is the interesting part and fun part of my project,
+i love to explain how i did this. the first thing i do is make the
+width of the screen going full 100% and the height is about the site of a browser
+the best part about this is the transform-style, establishing the 3D transforms to be visible
+the Perspective applies 3D depth, making items closer or farther when transformed*/
 .container {
   width: 100%;
   height: 100vh;
@@ -78,7 +101,8 @@ section {
   transform-style: preserve-3d;
   transform: perspective(1000px);
 }
-
+/* the .item bascially it selecting the icons in the box, Each image box is all selected
+and ready to be customize. */
 .container .item {
   width: 10rem;
   height: 20rem;
@@ -88,12 +112,16 @@ section {
   margin-bottom: 500px;
   position: relative;
 }
-
+/* .item:hover select all the image to hover make it pop forward in 3D
+I added the brightness into the icons for the effect when it selected. */
 .container .item:hover {
   filter: brightness(1);
   transform: translateZ(200px);
 }
 
+/* .item:hover + is a siblings effects these apply for the next itmes after the hovered one. The item 
+right next to the hovered one: slighty brighter, pushed forward and rotated, the one after that start to dimmier
+and slighty rotated giving a 3D wave effect. Basically it an add on for layouts for the first and the seconds icons */
 .container .item:hover + * {
   filter: brightness(0.6);
   transform: translateZ(150px) rotateY(40deg);
@@ -104,6 +132,11 @@ section {
   transform: translateZ(70px) rotateY(20deg);
 }
 
+/* However, because it only can affect what in front, it doesn't affect anything from the back
+so i add a code order call ":has()" this target the items before the hovered one, this style
+mirror the previous effect for these items:
++ If the items hovered it will apply changes to the one just before
++ This is giving an "opening" animation as you hover across the row*/
 .container .item:has(+ *:hover) {
   filter: brightness(0.6);
   transform: translateZ(150px) rotateY(-40deg);
@@ -113,12 +146,19 @@ section {
   transform: translateZ(70px) rotateY(-20deg);
 }
 
+/* For this, basically fitting the image in the item box giving them the ratio
+without stretching */
 .item img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
+/* The first problems i was having after coding the hover, is the spacing of the affects
+it to tight, feel un-natural, i created this invisible areas to expand the space
+also it clickable space, to do this i add the before and hover to the items
+created an invisible blocks, extending the hover zone and help with the positioning affects
+like shadows or overlays */
 .container .item::before,
 .container .item::after {
   content: "";
@@ -134,6 +174,10 @@ section {
 /*----------------------*/
 
 /* Video upload */
+
+/* The one feature i want to add for this is the upload-card
+this is a style container for the upload section h1 is basically the Large title for the upload card
+upload card p is a descrpition text. */
 .upload-card {
   padding: 2.5rem;
   text-align: center;
@@ -152,6 +196,9 @@ section {
   margin-bottom: 1rem;
 }
 
+/* Drop areas is what i am aiming for, not only you can send the files 
+you can also drag and drop the files inside,  this is the main interactive area for drag 
+and drop or file input.*/
 .drop-area {
   border: 2px dashed #aaa;
   border-radius: 12px;
@@ -162,11 +209,15 @@ section {
   transition: border-color 0.3s, background 0.3s;
 }
 
+/* Changes the color when hovered to give the users a visual feedback */
 .drop-area:hover {
   border-color: #23d5ab;
   background-color: #aaa;
 }
 
+/* This is the best feature for the files, it hides the native file input visually
+but keeps it function, the invisible input covers the whole area so users can click anywhere
+on the zone to upload */
 .drop-area input[type="file"] {
   opacity: 0;
   position: absolute;
@@ -177,12 +228,18 @@ section {
   cursor: pointer;
 }
 
+/* this can instructial the text inside the box itself
+witht he medium gray and standard size of the drop, creating the
+normal drag & drop site colors */
 .drop-area span {
   display: block;
   font-size: 1rem;
   color: #666;
 }
 
+/* For the video itself, video-previews holds the preview of the uploaded video
+At first, it's hidden with display none, but later on the Javascript will be shows
+the flex is the lays out of the preview side-by-side. */
 .video-preview {
   margin-top: 1.5rem;
   display: none;
