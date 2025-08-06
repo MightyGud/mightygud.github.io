@@ -1,0 +1,91 @@
+
+/* i used the font-face tag, because i want to add the pixel font styles, but i don't want to add them one by one
+so i came to add myself a font that i can use for the whole style.css
+that why i used @font-face, this can let you add your favourite font in the code */
+@font-face {
+  font-family: "MyPixelFont";
+  src: url("../Assignment 2/m5x7.ttf") format("truetype");
+}
+/* AFter i added the new font, i now can use the pixel font that i got from managore.itch.io*/
+body {
+  font-family: "MyPixelFont", monospace;
+  background-color: rgba(58, 129, 196, 0.575);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  color: rgba(7, 73, 160, 0.726);
+}
+
+#erokia_audio {
+  display: block;
+  width: 240px;
+  height: 50px;
+}
+
+.Background-gif {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 5px 5px;
+}
+
+.control-audio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  gap: 150px;
+  border-radius: 20px;
+}
+/* After doing some research, i realise that -webkit-appeearance is a property used to change or reset the styling default of HTML
+this element is can be use by WebKit engine (used for browers like Chrome and Safari*/
+#progress {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 6px;
+  background: blue;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 40px 0;
+}
+/* When the progress bar is done, i want to add one feature for the design of the bar is the "thumb" (the draggable circle) of the input slider, 
+this can be the core for dragging some part of the music.  */
+#progress::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background: #02479c;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 8px solid white;
+  box-shadow: 0 5px 5px rgba(255, 26, 26, 0.22);
+}
+
+#current-time {
+  font-size: 1.5rem;
+  padding: 10px;
+}
+
+#duration {
+  font-size: 1.5rem;
+  padding: 10px;
+}
+
+.slider-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#Reference {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+}
+.Credit {
+  display: flex;
+  gap: 10px;
+  margin: 10px;
+}
